@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Art of Marble Cake — Atelier Katja</title>
-    <meta name="description" content="Fluffy, Moist, and Irresistibly Delicious. Discover Katja's perfected marble cake recipe with soaking syrup and Rocher glaze. Only $12.">
+    <title>The Best Moist Marble Cake Recipe — With Soaking Syrup & Rocher Glaze | Atelier Katja</title>
+    <meta name="description" content="Discover the marble cake recipe your family will ask for forever — perfectly fluffy, incredibly moist, with a rich soaking syrup and a decadent Rocher chocolate glaze. Only $12.">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Katja Althoff — Atelier Katja">
     <link rel="canonical" href="https://atelierkatja.com/the-art-of-marble-cake/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="product">
-    <meta property="og:title" content="The Art of Marble Cake — Atelier Katja">
-    <meta property="og:description" content="Fluffy, Moist, and Irresistibly Delicious. The perfect marble cake recipe with soaking syrup and Rocher glaze. Only $12.">
+    <meta property="og:title" content="The Best Moist Marble Cake Recipe — Atelier Katja">
+    <meta property="og:description" content="Fluffy, moist marble cake with soaking syrup and Rocher chocolate glaze. A professional pastry chef's guide — only $12.">
     <meta property="og:image" content="https://atelierkatja.com/assets/images/marble-cake/hero-ebook.jpg">
     <meta property="og:url" content="https://atelierkatja.com/the-art-of-marble-cake/">
     <meta property="og:site_name" content="Atelier Katja">
-    <meta property="og:locale" content="en_US">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="The Art of Marble Cake — Atelier Katja">
-    <meta name="twitter:description" content="Fluffy, Moist, and Irresistibly Delicious. The perfect marble cake recipe. Only $12.">
+    <meta name="twitter:title" content="The Best Moist Marble Cake Recipe — Atelier Katja">
+    <meta name="twitter:description" content="Perfectly fluffy marble cake with soaking syrup & Rocher glaze. Step-by-step guide. Only $12.">
     <meta name="twitter:image" content="https://atelierkatja.com/assets/images/marble-cake/hero-ebook.jpg">
 
     <!-- Structured Data -->
@@ -30,16 +29,10 @@
         "@context": "https://schema.org",
         "@type": "Product",
         "name": "The Art of Marble Cake",
-        "description": "A detailed eBook with the perfected marble cake recipe, soaking syrup and Rocher glaze. Step-by-step instructions with expert tips.",
+        "description": "A professional pastry chef's step-by-step guide to the perfect moist marble cake, with soaking syrup and decadent Rocher chocolate glaze.",
         "image": "https://atelierkatja.com/assets/images/marble-cake/hero-ebook.jpg",
-        "brand": {
-            "@type": "Brand",
-            "name": "Atelier Katja"
-        },
-        "author": {
-            "@type": "Person",
-            "name": "Katja Althoff"
-        },
+        "brand": { "@type": "Brand", "name": "Atelier Katja" },
+        "author": { "@type": "Person", "name": "Katja Althoff" },
         "offers": {
             "@type": "Offer",
             "price": "12",
@@ -51,13 +44,11 @@
     </script>
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>
-        /* ---- Page-specific styles ---- */
         .hero {
             background: var(--cream);
             padding: 80px 20px 60px;
             text-align: center;
         }
-
         .hero__eyebrow {
             font-size: 0.78rem;
             font-weight: 600;
@@ -66,177 +57,219 @@
             color: var(--gold);
             margin-bottom: 16px;
         }
-
-        .hero__title {
-            max-width: 680px;
-            margin: 0 auto 20px;
-        }
-
+        .hero__title { max-width: 720px; margin: 0 auto 20px; }
         .hero__subtitle {
             font-size: 1.15rem;
             color: var(--text-light);
-            max-width: 520px;
+            max-width: 560px;
             margin: 0 auto 36px;
+            line-height: 1.8;
         }
-
         .hero__image {
             margin: 48px auto 0;
-            max-width: 360px;
+            max-width: 380px;
             border-radius: 12px;
             box-shadow: var(--shadow-card);
         }
 
-        /* About the ebook */
-        .ebook-section {
+        /* Pitch section */
+        .pitch { background: var(--white); text-align: center; }
+        .pitch__inner { max-width: 640px; margin: 0 auto; }
+        .pitch__quote {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--warm-brown);
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+        .pitch__text { font-size: 1.05rem; line-height: 1.85; color: var(--text-light); }
+
+        /* Benefits grid */
+        .benefits { background: var(--cream); }
+        .benefits__header { text-align: center; margin-bottom: 48px; }
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 760px;
+            margin: 0 auto 40px;
+        }
+        .benefit-card {
             background: var(--white);
+            border-radius: 16px;
+            padding: 28px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            box-shadow: var(--shadow-soft);
         }
+        .benefit-card__icon { font-size: 1.6rem; flex-shrink: 0; }
+        .benefit-card__title {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            color: var(--warm-brown);
+            margin-bottom: 6px;
+        }
+        .benefit-card__text { font-size: 0.88rem; color: var(--text-light); line-height: 1.6; }
 
-        .ebook-section__inner {
+        /* CTA banner */
+        .cta-banner {
+            background: var(--gold);
             text-align: center;
-            max-width: 640px;
-            margin: 0 auto;
+            padding: 48px 20px;
         }
+        .cta-banner h2 { color: var(--white); margin-bottom: 8px; }
+        .cta-banner p { color: rgba(255,255,255,0.85); margin-bottom: 28px; font-size: 1.05rem; }
+        .cta-banner .btn { background: var(--white); color: var(--warm-brown); }
 
-        .ebook-section__text {
-            font-size: 1.08rem;
-            line-height: 1.85;
-            color: var(--text-light);
-            margin-top: 20px;
-        }
-
-        /* Simple cakes section */
-        .passion-section {
-            background: var(--cream);
-            text-align: center;
-        }
-
-        .passion-section__text {
-            font-size: 1.1rem;
-            line-height: 1.85;
-            color: var(--text-light);
-            max-width: 600px;
-            margin: 20px auto 0;
-        }
-
-        /* Testimonials placeholder / devices */
-        .devices-section {
-            background: var(--white);
-            text-align: center;
-        }
-
-        .devices-section img {
-            max-width: 480px;
-            margin: 24px auto 0;
+        @media (max-width: 700px) {
+            .benefits-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Topbar -->
     <header class="topbar">
         <span class="topbar__brand">Atelier Katja</span>
     </header>
 
-    <!-- Hero -->
+    <!-- HERO -->
     <section class="hero">
-        <p class="hero__eyebrow fade-up">eBook · Baking</p>
-        <h1 class="hero__title fade-up fade-up--delay-1">The Art of Marble Cake</h1>
-        <p class="hero__subtitle fade-up fade-up--delay-2">Fluffy, Moist, and Irresistibly Delicious — the Perfect Cake for You.</p>
+        <p class="hero__eyebrow fade-up">Pastry Chef's eBook · Baking Guide</p>
+        <h1 class="hero__title fade-up fade-up--delay-1">The Marble Cake Recipe That Will Become a Family Legend</h1>
+        <p class="hero__subtitle fade-up fade-up--delay-2">
+            Perfectly fluffy, impossibly moist — with a rich soaking syrup and a decadent Rocher chocolate glaze.
+            This is the marble cake your family will ask for forever.
+        </p>
         <div class="divider fade-up fade-up--delay-2">
             <div class="divider__line"></div>
             <div class="divider__dot"></div>
             <div class="divider__line"></div>
         </div>
-        <a href="https://pay.hotmart.com/H96957151F?off=vf1qtg4h&hotfeature=51" class="btn btn--primary fade-up fade-up--delay-3" target="_blank" rel="noopener">Buy Now — $12</a>
-        <img src="../assets/images/marble-cake/hero-ebook.jpg" alt="The Art of Marble Cake eBook" class="hero__image fade-up fade-up--delay-4">
+        <a href="https://pay.hotmart.com/H96957151F?off=vf1qtg4h&hotfeature=51" class="btn btn--primary fade-up fade-up--delay-3" target="_blank" rel="noopener">Get the Recipe Guide — $12</a>
+        <img src="../assets/images/marble-cake/hero-ebook.jpg" alt="Moist marble cake recipe ebook with Rocher glaze" class="hero__image fade-up fade-up--delay-4">
     </section>
 
-    <!-- About the eBook -->
-    <section class="section ebook-section">
+    <!-- PITCH -->
+    <section class="section pitch">
         <div class="container">
-            <div class="ebook-section__inner fade-up">
-                <p class="about__label">About the content</p>
-                <h2>A Recipe Worth Passing Down</h2>
+            <div class="pitch__inner fade-up">
+                <p class="about__label">Simple cake. Extraordinary results.</p>
+                <h2>There's Something Magical About a Perfect Marble Cake</h2>
                 <div class="divider divider--wide">
                     <div class="divider__line"></div>
                     <div class="divider__dot"></div>
                     <div class="divider__line"></div>
                 </div>
-                <p class="ebook-section__text">
-                    In this eBook, you'll discover a detailed recipe with all the tips and tricks you need to achieve perfect results every time.
-                    It also includes bonus recipes for a rich soaking syrup and a decadent Rocher glaze.
+                <p class="pitch__text">
+                    It's the kind of cake that makes people close their eyes after the first bite. Moist, tender, with ribbons of rich chocolate swirled through a buttery vanilla crumb.
+                    But most recipes leave out the details that make all the difference.
+                </p>
+                <p class="pitch__quote">"It's the kind of cake your future grandchildren will talk about."</p>
+                <p class="pitch__text">
+                    In this eBook, every technique is explained — not just the steps, but the <em>why</em> behind each one.
+                    So you don't just follow instructions. You understand the craft.
                 </p>
                 <br>
-                <a href="https://pay.hotmart.com/H96957151F?off=vf1qtg4h&hotfeature=51" class="btn btn--gold" target="_blank" rel="noopener">Get my eBook</a>
+                <a href="https://pay.hotmart.com/H96957151F?off=vf1qtg4h&hotfeature=51" class="btn btn--gold" target="_blank" rel="noopener">Get My eBook — $12</a>
             </div>
         </div>
     </section>
 
-    <!-- Simple cakes, made perfect -->
-    <section class="section passion-section">
-        <div class="container fade-up">
-            <p class="about__label" style="text-align:center;">Simple cakes, made perfect</p>
-            <h2 style="text-align:center;">Made with Love & Precision</h2>
-            <div class="divider">
-                <div class="divider__line"></div>
-                <div class="divider__dot"></div>
-                <div class="divider__line"></div>
+    <!-- BENEFITS -->
+    <section class="section benefits">
+        <div class="container--wide">
+            <div class="benefits__header fade-up">
+                <p class="about__label">What makes this marble cake guide different</p>
+                <h2>Everything Included in This eBook</h2>
             </div>
-            <p class="passion-section__text">
-                I have a passion for simple cakes but making them perfect. Over the years, I've refined this recipe, and I'm so excited to share it with you.
-                This eBook offers a detailed recipe with step-by-step instructions and expert tips to guarantee perfect results every time.
-                It's the kind of cake your future grandchildren will talk about!
-            </p>
+            <div class="benefits-grid">
+                <div class="benefit-card fade-up">
+                    <span class="benefit-card__icon">🎂</span>
+                    <div>
+                        <h3 class="benefit-card__title">The Perfected Marble Cake Recipe</h3>
+                        <p class="benefit-card__text">Never dry, never dense. Precise quantities, techniques, and the exact baking method for a fluffy, moist result every time.</p>
+                    </div>
+                </div>
+                <div class="benefit-card fade-up fade-up--delay-1">
+                    <span class="benefit-card__icon">💧</span>
+                    <div>
+                        <h3 class="benefit-card__title">Rich Soaking Syrup Recipe</h3>
+                        <p class="benefit-card__text">The secret weapon for ultimate moistness. This syrup locks in texture and adds a subtle depth of flavor most recipes skip entirely.</p>
+                    </div>
+                </div>
+                <div class="benefit-card fade-up fade-up--delay-2">
+                    <span class="benefit-card__icon">🍫</span>
+                    <div>
+                        <h3 class="benefit-card__title">Decadent Rocher Chocolate Glaze</h3>
+                        <p class="benefit-card__text">A show-stopping finish that transforms a great marble cake into an unforgettable one. Crunchy, chocolatey, impressive.</p>
+                    </div>
+                </div>
+                <div class="benefit-card fade-up fade-up--delay-3">
+                    <span class="benefit-card__icon">📸</span>
+                    <div>
+                        <h3 class="benefit-card__title">Step-by-Step Instructions</h3>
+                        <p class="benefit-card__text">Clear, detailed guidance with expert tips at every stage — so you know exactly what to do and what to look for.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:center;" class="fade-up">
+                <a href="https://pay.hotmart.com/H96957151F?off=vf1qtg4h&hotfeature=51" class="btn btn--primary" target="_blank" rel="noopener">Get Instant Access — $12</a>
+            </div>
         </div>
     </section>
 
-    <!-- About Me -->
+    <!-- ABOUT ME -->
     <section class="section about">
         <div class="container">
             <div class="about__inner fade-up">
-                <img src="../assets/images/shared/katja-portrait.jpg" alt="Katja Althoff — Pastry Chef" class="about__photo">
+                <img src="../assets/images/shared/katja-portrait.jpg" alt="Katja Althoff — Professional Pastry Chef from Austria" class="about__photo">
                 <div>
-                    <p class="about__label">About me</p>
+                    <p class="about__label">Your guide — meet the pastry chef</p>
                     <h2 class="about__name">Katja Althoff</h2>
                     <p class="about__text">
-                        My name is Katja and I'm from Austria, but I've been living in the South of France for almost eight years now.
-                        During that time, I've studied pastry with great chefs, worked in professional kitchens, earned my diploma,
-                        and opened my own baking business, where I sell customized cakes and Macarons.
+                        My name is Katja. I'm from Austria, and I've been living in the South of France for almost eight years — studying pastry with great chefs, earning my professional diploma, working in demanding kitchens, and building my own baking business.
                     </p>
                     <br>
                     <p class="about__text">
-                        With all the knowledge I've gained, I've noticed that many recipes are incomplete and fail to include important
-                        steps or explain the <em>why</em> behind the baking process. That's why I've created this eBook — the first of many to come.
+                        I have a passion for taking the simplest cakes and making them perfect. Over the years, I noticed that most recipes are incomplete — they skip important steps and never explain the <em>why</em>. That gap is exactly what this eBook fills. It's the first of many to come.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing -->
+    <!-- CTA BANNER -->
+    <section class="cta-banner fade-up">
+        <h2>Ready to Bake a Marble Cake Worth Remembering?</h2>
+        <p>Instant PDF download · Soaking syrup + Rocher glaze included · 7-day guarantee</p>
+        <a href="https://pay.hotmart.com/H96957151F?off=vf1qtg4h&hotfeature=51" class="btn" target="_blank" rel="noopener">Get My Marble Cake Guide — $12</a>
+    </section>
+
+    <!-- PRICING -->
     <section class="section pricing">
         <div class="container">
             <div class="price-card fade-up">
-                <p class="price-card__label">Limited time offer</p>
-                <h3 class="price-card__title">The Art of Marble Cake</h3>
-                <p class="price-card__subtitle">Complete recipe with soaking syrup & Rocher glaze</p>
+                <p class="price-card__label">Complete marble cake recipe guide</p>
+                <h2 class="price-card__title">The Art of Marble Cake</h2>
+                <p class="price-card__subtitle">Recipe · Soaking syrup · Rocher glaze · Expert tips</p>
                 <div class="price-card__amount"><span>$</span>12</div>
-                <a href="https://pay.hotmart.com/H96957151F?off=vf1qtg4h&hotfeature=51" class="btn btn--primary price-card__cta" target="_blank" rel="noopener">Buy Now</a>
-                <p class="price-card__secure">100% secure payment with instant approval</p>
+                <a href="https://pay.hotmart.com/H96957151F?off=vf1qtg4h&hotfeature=51" class="btn btn--primary price-card__cta" target="_blank" rel="noopener">Get Instant Access — $12</a>
+                <p class="price-card__secure">Immediate access after purchase · 100% secure payment</p>
                 <div class="price-card__guarantee">
                     <strong>7-Day Money-Back Guarantee</strong>
-                    Your money back, no questions asked within 7 days of your purchase.
+                    Not satisfied? Get a full refund within 7 days — no questions, no conditions.
                 </div>
             </div>
-
             <div class="trust-badges fade-up fade-up--delay-1">
                 <div class="trust-badge">
                     <div class="trust-badge__icon">🛡️</div>
                     <p class="trust-badge__text">7-Day Guarantee</p>
                 </div>
                 <div class="trust-badge">
-                    <div class="trust-badge__icon">🔒</div>
-                    <p class="trust-badge__text">100% Secure Payment</p>
+                    <div class="trust-badge__icon">📥</div>
+                    <p class="trust-badge__text">Instant Download</p>
                 </div>
                 <div class="trust-badge">
                     <div class="trust-badge__icon">📱</div>
@@ -249,70 +282,54 @@
     <!-- FAQ -->
     <section class="section faq">
         <div class="container">
-            <h2 class="faq__title fade-up">Frequently Asked Questions</h2>
+            <p class="about__label fade-up" style="text-align:center;">Got questions?</p>
+            <h2 class="faq__title fade-up fade-up--delay-1">Marble Cake Recipe — Your Questions Answered</h2>
             <ul class="faq__list">
                 <li class="faq__item fade-up">
-                    <div class="faq__question">
-                        Who is this product designed for?
-                        <span class="faq__icon">+</span>
-                    </div>
-                    <div class="faq__answer">
-                        <p>For everyone, really. It's the kind of recipe that belongs in every baker's collection. The instructions are simple to follow, so even beginners won't have any trouble. At the same time, advanced bakers and professionals will appreciate and enjoy this recipe, as it's a timeless classic.</p>
-                    </div>
+                    <div class="faq__question">Is this marble cake recipe suitable for beginners?<span class="faq__icon">+</span></div>
+                    <div class="faq__answer"><p>Absolutely. The instructions are clear, detailed, and easy to follow — regardless of your experience level. Beginners will find it approachable, while experienced bakers will appreciate the depth of explanation and the professional techniques included.</p></div>
                 </li>
                 <li class="faq__item fade-up fade-up--delay-1">
-                    <div class="faq__question">
-                        How does the Guarantee Period work?
-                        <span class="faq__icon">+</span>
-                    </div>
-                    <div class="faq__answer">
-                        <p>The Guarantee Period is the period of time you have to request a full refund of the amount you paid for your purchase if the product is not satisfactory to you. Simply contact us within 7 days and we'll refund you in full, no questions asked.</p>
-                    </div>
+                    <div class="faq__question">What is the Rocher glaze and how is it made?<span class="faq__icon">+</span></div>
+                    <div class="faq__answer"><p>The Rocher glaze is a rich chocolate coating with a distinctive crunchy texture — inspired by the famous confection. The eBook includes a complete step-by-step recipe for making it at home, with tips to get the texture and finish exactly right.</p></div>
                 </li>
                 <li class="faq__item fade-up fade-up--delay-2">
-                    <div class="faq__question">
-                        How to access the product?
-                        <span class="faq__icon">+</span>
-                    </div>
-                    <div class="faq__answer">
-                        <p>You'll receive your access information by email. The content can be viewed or downloaded on your desktop, smartphone, tablet, or other digital device. You can also access the product from Hotmart by going to My Account → My Purchases.</p>
-                    </div>
+                    <div class="faq__question">How do I receive the marble cake eBook after purchase?<span class="faq__icon">+</span></div>
+                    <div class="faq__answer"><p>You'll receive an email with your download link immediately after your purchase via Hotmart. The eBook is in PDF format and works on any device — computer, tablet, or smartphone.</p></div>
                 </li>
                 <li class="faq__item fade-up fade-up--delay-3">
-                    <div class="faq__question">
-                        How can I buy this eBook?
-                        <span class="faq__icon">+</span>
-                    </div>
-                    <div class="faq__answer">
-                        <p>To purchase this eBook, simply click any "Buy Now" button on this page. You'll be redirected to a secure checkout. Payment is processed instantly and you'll receive your download link by email right away.</p>
-                    </div>
+                    <div class="faq__question">How long does this marble cake stay moist?<span class="faq__icon">+</span></div>
+                    <div class="faq__answer"><p>Thanks to the soaking syrup technique included in the guide, this marble cake stays exceptionally moist for several days when stored properly. The guide includes specific storage recommendations to maintain freshness.</p></div>
+                </li>
+                <li class="faq__item fade-up">
+                    <div class="faq__question">What makes this marble cake recipe different from others online?<span class="faq__icon">+</span></div>
+                    <div class="faq__answer"><p>Most marble cake recipes give you basic instructions without explaining why things work. This guide covers the science of each step, includes a soaking syrup and Rocher glaze that take the cake to another level entirely, and is built on years of professional pastry training.</p></div>
                 </li>
             </ul>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FINAL CTA -->
+    <section style="background:var(--cream); padding:60px 20px; text-align:center;">
+        <div class="container fade-up">
+            <h2 style="margin-bottom:12px;">Bake the Marble Cake Everyone Will Talk About</h2>
+            <p style="color:var(--text-light); margin-bottom:28px;">Instant access · Soaking syrup · Rocher glaze · 7-day guarantee.</p>
+            <a href="https://pay.hotmart.com/H96957151F?off=vf1qtg4h&hotfeature=51" class="btn btn--primary" target="_blank" rel="noopener">Get My Marble Cake eBook — $12</a>
+        </div>
+    </section>
+
     <footer class="footer">
         <p class="footer__text">© 2024 Atelier Katja. All rights reserved.</p>
     </footer>
 
-    <!-- JS: Scroll animations + FAQ accordion -->
     <script>
-        // Intersection Observer for fade-up
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
         }, { threshold: 0.1 });
-
         document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-
-        // FAQ Accordion
-        document.querySelectorAll('.faq__question').forEach(question => {
-            question.addEventListener('click', () => {
-                const item = question.parentElement;
+        document.querySelectorAll('.faq__question').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
                 const isOpen = item.classList.contains('open');
                 document.querySelectorAll('.faq__item.open').forEach(i => i.classList.remove('open'));
                 if (!isOpen) item.classList.add('open');

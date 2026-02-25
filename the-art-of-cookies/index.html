@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Art of Cookies — Atelier Katja</title>
-    <meta name="description" content="Master bakery-style cookies at home. 1 base recipe + 8 delicious variations + the science behind baking. Only $12.">
+    <title>Perfect Bakery-Style Cookie Recipe at Home — The Art of Cookies | Atelier Katja</title>
+    <meta name="description" content="Stop making average cookies. This professional guide gives you 1 perfected base recipe, 8 delicious variations, and the science behind baking. Bakery-style cookies at home — $12.">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Katja Althoff — Atelier Katja">
     <link rel="canonical" href="https://atelierkatja.com/the-art-of-cookies/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="product">
-    <meta property="og:title" content="The Art of Cookies — Atelier Katja">
-    <meta property="og:description" content="Master bakery-style cookies at home. 1 base recipe + 8 delicious variations + the science behind baking. Only $12.">
+    <meta property="og:title" content="Perfect Bakery-Style Cookie Recipe — The Art of Cookies | Atelier Katja">
+    <meta property="og:description" content="1 perfected base recipe, 8 variations, and the full science of baking cookies. Crispy outside, chewy inside — every time. Only $12.">
     <meta property="og:image" content="https://atelierkatja.com/assets/images/cookies/hero-cookie.png">
     <meta property="og:url" content="https://atelierkatja.com/the-art-of-cookies/">
     <meta property="og:site_name" content="Atelier Katja">
-    <meta property="og:locale" content="en_US">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="The Art of Cookies — Atelier Katja">
-    <meta name="twitter:description" content="Bakery-style cookies at home. Master the recipe, understand the science, create your own variations. Only $12.">
+    <meta name="twitter:title" content="Perfect Bakery-Style Cookie Recipe — Atelier Katja">
+    <meta name="twitter:description" content="Master the perfect cookie recipe at home. 1 base + 8 variations + baking science. Only $12.">
     <meta name="twitter:image" content="https://atelierkatja.com/assets/images/cookies/hero-cookie.png">
 
     <!-- Structured Data -->
@@ -30,34 +29,31 @@
         "@context": "https://schema.org",
         "@type": "Product",
         "name": "The Art of Cookies",
-        "description": "A complete guide to mastering bakery-style cookies at home. 1 perfected base recipe, 8 delicious variations, and the science behind baking explained.",
+        "description": "A complete guide to mastering bakery-style cookies at home. 1 perfected base recipe, 8 delicious variations, and the full science of baking explained.",
         "image": "https://atelierkatja.com/assets/images/cookies/hero-cookie.png",
-        "brand": {
-            "@type": "Brand",
-            "name": "Atelier Katja"
-        },
-        "author": {
-            "@type": "Person",
-            "name": "Katja Althoff"
-        },
+        "brand": { "@type": "Brand", "name": "Atelier Katja" },
+        "author": { "@type": "Person", "name": "Katja Althoff" },
         "offers": {
             "@type": "Offer",
             "price": "12",
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock",
             "url": "https://pay.hotmart.com/W98054458O?off=bhghmq1p&hotfeature=51"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "3"
         }
     }
     </script>
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>
-        /* ---- Dark hero ---- */
+        /* Dark hero */
         .hero {
             background: var(--warm-brown);
             padding: 80px 20px 60px;
-            color: var(--gold-light);
         }
-
         .hero__inner {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -66,7 +62,6 @@
             max-width: 900px;
             margin: 0 auto;
         }
-
         .hero__eyebrow {
             font-size: 0.78rem;
             font-weight: 600;
@@ -75,63 +70,81 @@
             color: var(--gold);
             margin-bottom: 16px;
         }
-
-        .hero h1 {
-            color: var(--gold-light);
-            margin-bottom: 16px;
-        }
-
+        .hero h1 { color: var(--gold-light); margin-bottom: 16px; }
         .hero__subtitle {
             font-size: 1.05rem;
-            color: rgba(232, 201, 160, 0.8);
-            margin-bottom: 32px;
-            line-height: 1.75;
+            color: rgba(232,201,160,0.85);
+            margin-bottom: 16px;
+            line-height: 1.8;
         }
-
         .hero__price {
             font-family: var(--font-display);
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: var(--gold);
-            margin-bottom: 20px;
+            margin-bottom: 24px;
         }
-
         .hero__image {
             border-radius: 12px;
-            box-shadow: 0 12px 48px rgba(0,0,0,0.35);
+            box-shadow: 0 12px 48px rgba(0,0,0,0.4);
             width: 100%;
             object-fit: cover;
             max-height: 480px;
         }
 
-        /* More than a recipe section */
-        .description {
+        /* Problem (PAS) */
+        .problem-text {
             background: var(--cream);
-        }
-
-        .description__inner {
-            max-width: 680px;
-            margin: 0 auto;
             text-align: center;
         }
-
-        .description__text {
-            font-size: 1.05rem;
+        .problem-text__inner {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .problem-text__body {
+            font-size: 1.08rem;
             line-height: 1.85;
             color: var(--text-light);
+            margin-top: 16px;
+        }
+        .problem-text__highlight {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            color: var(--warm-brown);
+            font-style: italic;
             margin-top: 20px;
         }
 
-        /* Photo grid */
-        .gallery {
-            background: var(--white);
-            padding: 0;
-        }
-
-        .gallery-grid {
+        /* What's inside */
+        .inside { background: var(--white); }
+        .inside__header { text-align: center; margin-bottom: 48px; }
+        .inside-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 760px;
+            margin: 0 auto;
         }
+        .inside-item {
+            background: var(--cream);
+            border-radius: 16px;
+            padding: 28px 24px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            box-shadow: var(--shadow-soft);
+        }
+        .inside-item__icon { font-size: 1.6rem; flex-shrink: 0; }
+        .inside-item__title {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            color: var(--warm-brown);
+            margin-bottom: 6px;
+        }
+        .inside-item__text { font-size: 0.88rem; color: var(--text-light); line-height: 1.6; }
 
+        /* Gallery */
+        .gallery { padding: 0; overflow: hidden; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
         .gallery-grid img {
             width: 100%;
             height: 260px;
@@ -139,40 +152,14 @@
             display: block;
             transition: transform 0.4s ease;
         }
+        .gallery-grid img:hover { transform: scale(1.04); }
 
-        .gallery-grid img:hover {
-            transform: scale(1.03);
-        }
+        /* About */
+        .about--cookies { background: var(--cream); }
 
-        .gallery-wrapper {
-            overflow: hidden;
-        }
-
-        /* About Me (dark style for cookies) */
-        .about--cookies {
-            background: var(--cream);
-        }
-
-        /* Testimonials with photos */
-        .testimonials {
-            background: var(--white);
-        }
-
-        .testimonials__title {
-            text-align: center;
-            margin-bottom: 16px;
-        }
-
-        .testimonials__subtitle {
-            text-align: center;
-            font-size: 0.9rem;
-            color: var(--gold);
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 40px;
-        }
-
+        /* Testimonials */
+        .testimonials { background: var(--white); }
+        .testimonials__header { text-align: center; margin-bottom: 40px; }
         .testimonials-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -180,207 +167,209 @@
             max-width: 860px;
             margin: 0 auto;
         }
-
         .testimonial-card {
             background: var(--cream);
             border-radius: 16px;
             overflow: hidden;
             box-shadow: var(--shadow-soft);
         }
-
-        .testimonial-card__photos {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-
-        .testimonial-card__photos img {
-            width: 100%;
-            height: 140px;
-            object-fit: cover;
-        }
-
-        .testimonial-card__photos--single img {
-            height: 200px;
-        }
-
-        .testimonial-card__body {
-            padding: 20px;
-        }
-
+        .testimonial-card__photos { display: grid; grid-template-columns: 1fr 1fr; }
+        .testimonial-card__photos img { width: 100%; height: 140px; object-fit: cover; }
+        .testimonial-card__body { padding: 20px; }
         .testimonial-card__name {
             font-family: var(--font-display);
             font-size: 1.05rem;
             color: var(--warm-brown);
             margin-bottom: 6px;
         }
+        .testimonial-card__stars { color: var(--gold); font-size: 0.9rem; margin-bottom: 8px; }
 
-        .testimonial-card__stars {
-            color: var(--gold);
-            font-size: 0.9rem;
-            margin-bottom: 8px;
-        }
-
-        /* Feedback photo standalone */
-        .feedback-section {
-            background: var(--warm-brown);
+        /* CTA banner */
+        .cta-banner {
+            background: var(--gold);
             text-align: center;
-            padding: 0;
+            padding: 48px 20px;
         }
+        .cta-banner h2 { color: var(--white); margin-bottom: 8px; }
+        .cta-banner p { color: rgba(255,255,255,0.85); margin-bottom: 28px; font-size: 1.05rem; }
+        .cta-banner .btn { background: var(--white); color: var(--warm-brown); }
 
-        .feedback-section img {
-            width: 100%;
-            max-height: 400px;
-            object-fit: cover;
-            object-position: center top;
-        }
+        /* Pricing dark */
+        .pricing--dark { background: var(--warm-brown); }
 
         @media (max-width: 700px) {
             .hero__inner { grid-template-columns: 1fr; }
             .gallery-grid { grid-template-columns: 1fr; }
             .gallery-grid img { height: 220px; }
+            .inside-grid { grid-template-columns: 1fr; }
             .testimonials-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Topbar -->
     <header class="topbar">
         <span class="topbar__brand">Atelier Katja</span>
     </header>
 
-    <!-- Hero — dark background -->
+    <!-- HERO — Problem (PAS) -->
     <section class="hero">
         <div class="hero__inner">
-            <div class="hero__content">
-                <p class="hero__eyebrow fade-up">eBook · Baking</p>
-                <h1 class="fade-up fade-up--delay-1">The Art of Cookies</h1>
+            <div>
+                <p class="hero__eyebrow fade-up">Pastry Chef's eBook · Baking Guide</p>
+                <h1 class="fade-up fade-up--delay-1">The Perfect Bakery-Style Cookie Recipe — Finally, Made at Home</h1>
                 <p class="hero__subtitle fade-up fade-up--delay-2">
-                    Cookies must be a universal love language. Now imagine having the perfect recipe
-                    to bake your favorite bakery-style cookies at home.
+                    Stop settling for flat, greasy, or under-baked cookies. This complete guide gives you everything you need to bake perfect cookies every single time — crispy outside, chewy inside, packed with flavor.
                 </p>
-                <p class="hero__price fade-up fade-up--delay-2">Only $12</p>
+                <p class="hero__price fade-up fade-up--delay-2">Only $12 · Instant Download</p>
                 <div class="divider fade-up fade-up--delay-2" style="margin-left:0;margin-right:auto;">
                     <div class="divider__line" style="background:rgba(200,149,108,0.4);"></div>
                     <div class="divider__dot"></div>
                     <div class="divider__line" style="background:rgba(200,149,108,0.4);"></div>
                 </div>
-                <a href="https://pay.hotmart.com/W98054458O?off=bhghmq1p&hotfeature=51" class="btn btn--gold fade-up fade-up--delay-3" target="_blank" rel="noopener">Start Baking Cookies!</a>
+                <a href="https://pay.hotmart.com/W98054458O?off=bhghmq1p&hotfeature=51" class="btn btn--gold fade-up fade-up--delay-3" target="_blank" rel="noopener">Start Baking Perfect Cookies</a>
             </div>
-            <img src="../assets/images/cookies/hero-cookie.png" alt="The Art of Cookies eBook" class="hero__image fade-up fade-up--delay-2">
+            <img src="../assets/images/cookies/hero-cookie.png" alt="Bakery-style cookies recipe ebook" class="hero__image fade-up fade-up--delay-2">
         </div>
     </section>
 
-    <!-- More than a recipe book -->
-    <section class="section description">
+    <!-- AGITATE (PAS) -->
+    <section class="section problem-text">
         <div class="container">
-            <div class="description__inner fade-up">
-                <p class="about__label">Unlock the secrets to perfect cookies</p>
-                <h2>More Than a Recipe Book</h2>
-                <div class="divider divider--wide">
-                    <div class="divider__line"></div>
-                    <div class="divider__dot"></div>
-                    <div class="divider__line"></div>
-                </div>
-                <p class="description__text">
-                    Making cookies isn't rocket science, but it does require a good recipe and an understanding of the "how" and "why" behind the baking process.
+            <div class="problem-text__inner fade-up">
+                <p class="about__label">You know that feeling…</p>
+                <h2>Most Cookie Recipes Leave Out the Most Important Part</h2>
+                <p class="problem-text__body">
+                    You follow the recipe exactly. You measure every ingredient. You watch the timer carefully. And yet — the cookies come out too flat, too crispy, too soft, or just missing that bakery magic.
                 </p>
-                <p class="description__text">
-                    <em>The Art of Cookies</em> is a complete guide to mastering bakery-style cookies at home. I'm sharing my perfected basic cookie recipe, with step-by-step instructions and photos, plus eight delicious variations. Beyond the recipes, I dive into the science behind baking — explaining the role of each ingredient, how they interact in the oven, and how you can create your own signature cookie recipe.
+                <p class="problem-text__body">
+                    The problem isn't you. It's that most recipes tell you <em>what</em> to do, but never explain <em>why</em>. Without understanding how butter, sugar, flour, and eggs interact in the oven, you're just guessing.
                 </p>
+                <p class="problem-text__highlight">"Once you understand the science, you'll never make a bad cookie again."</p>
             </div>
         </div>
     </section>
 
-    <!-- Cookie photo gallery -->
+    <!-- SOLUTION — What's inside -->
+    <section class="section inside">
+        <div class="container--wide">
+            <div class="inside__header fade-up">
+                <p class="about__label">More than a cookie recipe — a complete baking system</p>
+                <h2>Everything You'll Master in This Guide</h2>
+                <p style="color:var(--text-light); max-width:520px; margin:12px auto 0;">From the base recipe to the science behind it — designed for beginners and experienced bakers alike.</p>
+            </div>
+            <div class="inside-grid">
+                <div class="inside-item fade-up">
+                    <span class="inside-item__icon">🍪</span>
+                    <div>
+                        <h3 class="inside-item__title">The Perfected Base Cookie Recipe</h3>
+                        <p class="inside-item__text">My tested and refined base recipe with step-by-step photos — crispy edges, chewy center, bakery-quality results.</p>
+                    </div>
+                </div>
+                <div class="inside-item fade-up fade-up--delay-1">
+                    <span class="inside-item__icon">🎨</span>
+                    <div>
+                        <h3 class="inside-item__title">8 Delicious Variations</h3>
+                        <p class="inside-item__text">From classic chocolate chip to creative flavor twists — 8 recipes to expand your repertoire and impress every time.</p>
+                    </div>
+                </div>
+                <div class="inside-item fade-up fade-up--delay-2">
+                    <span class="inside-item__icon">🔬</span>
+                    <div>
+                        <h3 class="inside-item__title">The Science of Cookie Baking</h3>
+                        <p class="inside-item__text">Understand the role of every ingredient — how they interact in the oven and how to control texture, spread, and flavor.</p>
+                    </div>
+                </div>
+                <div class="inside-item fade-up fade-up--delay-3">
+                    <span class="inside-item__icon">✏️</span>
+                    <div>
+                        <h3 class="inside-item__title">Create Your Own Signature Cookie</h3>
+                        <p class="inside-item__text">With the knowledge from this guide, you'll have the confidence to invent your own unique cookie recipe from scratch.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
     <section class="gallery">
         <div class="gallery-grid">
-            <div class="gallery-wrapper">
-                <img src="../assets/images/cookies/cookies-gallery-1.jpg" alt="Cookies" loading="lazy">
-            </div>
-            <div class="gallery-wrapper">
-                <img src="../assets/images/cookies/cookies-gallery-2.jpg" alt="Cookies" loading="lazy">
-            </div>
-            <div class="gallery-wrapper">
-                <img src="../assets/images/cookies/cookies-gallery-3.jpg" alt="Cookies" loading="lazy">
-            </div>
+            <div style="overflow:hidden;"><img src="../assets/images/cookies/cookies-gallery-1.jpg" alt="Homemade bakery cookies" loading="lazy"></div>
+            <div style="overflow:hidden;"><img src="../assets/images/cookies/cookies-gallery-2.jpg" alt="Perfect cookie texture" loading="lazy"></div>
+            <div style="overflow:hidden;"><img src="../assets/images/cookies/cookies-gallery-3.jpg" alt="Cookies recipe result" loading="lazy"></div>
         </div>
     </section>
 
-    <!-- About Me -->
+    <!-- CTA MID -->
+    <section class="cta-banner fade-up">
+        <h2>Ready to Bake Cookies That Actually Taste Bakery-Good?</h2>
+        <p>Instant PDF download · Any device · 7-day money-back guarantee</p>
+        <a href="https://pay.hotmart.com/W98054458O?off=bhghmq1p&hotfeature=51" class="btn" target="_blank" rel="noopener">Get The Art of Cookies — $12</a>
+    </section>
+
+    <!-- ABOUT ME -->
     <section class="section about about--cookies">
         <div class="container">
             <div class="about__inner fade-up">
-                <img src="../assets/images/shared/katja-portrait.jpg" alt="Katja Althoff — Pastry Chef" class="about__photo">
+                <img src="../assets/images/shared/katja-portrait.jpg" alt="Katja Althoff — Professional Pastry Chef" class="about__photo">
                 <div>
-                    <p class="about__label">Overflowing with Happiness</p>
-                    <h2 class="about__name">Hello! My name is Katja</h2>
+                    <p class="about__label">Your guide — meet the pastry chef</p>
+                    <h2 class="about__name">Katja Althoff</h2>
                     <p class="about__text">
-                        I am originally from Austria, but I've been living in the South of France for seven years now, where I studied French pastry,
-                        earned my diploma, and opened my business, specializing in macarons and customized cakes.
+                        I'm originally from Austria, but I've been living and baking in the South of France for seven years — where I trained in French pastry, earned my professional diploma, and built my business specializing in macarons and custom cakes.
                     </p>
                     <br>
                     <p class="about__text">
-                        I have a passion for turning simple desserts into something special. My journey began in a 5-star hotel in the South of France,
-                        where I first discovered these cookies — and instantly fell in love with them. Over the years, I've refined the recipe to create
-                        perfect bakery-style cookies.
-                    </p>
-                    <br>
-                    <p class="about__text">
-                        With this eBook, I'm not just sharing a recipe — I'm introducing you to <em>The Art of Cookies</em>, explaining the role of
-                        each ingredient, how they interact in the oven, and how you can create your own unique cookie.
+                        My love for cookies started in a 5-star hotel kitchen where I first discovered these incredible bakery-style cookies served alongside coffee. I spent years refining the recipe until I had something truly extraordinary. This guide is the result of that journey — and I'm sharing everything with you.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Cookie photos -->
-    <section style="background:var(--white); padding: 60px 0;">
+    <!-- COOKIE PHOTOS -->
+    <section style="background:var(--white); padding:60px 0;">
         <div class="container">
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; max-width:640px; margin:0 auto;">
-                <img src="../assets/images/cookies/cookies-photo-1.jpg" alt="Freshly baked cookies" style="border-radius:12px; object-fit:cover; height:240px; width:100%;" class="fade-up">
-                <img src="../assets/images/cookies/cookies-photo-2.jpg" alt="Cookies detail" style="border-radius:12px; object-fit:cover; height:240px; width:100%;" class="fade-up fade-up--delay-1">
+                <img src="../assets/images/cookies/cookies-photo-1.jpg" alt="Fresh homemade cookies" style="border-radius:12px; object-fit:cover; height:240px; width:100%;" class="fade-up">
+                <img src="../assets/images/cookies/cookies-photo-2.jpg" alt="Cookies baking result" style="border-radius:12px; object-fit:cover; height:240px; width:100%;" class="fade-up fade-up--delay-1">
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
+    <!-- TESTIMONIALS -->
     <section class="section testimonials">
         <div class="container--wide">
-            <h2 class="testimonials__title fade-up">Discover the Art of Baking Cookies</h2>
-            <p class="testimonials__subtitle fade-up fade-up--delay-1">Feedback</p>
+            <p class="about__label fade-up" style="text-align:center;">Real bakers, real results</p>
+            <h2 class="testimonials__header fade-up fade-up--delay-1">What Our Cookie Bakers Are Saying</h2>
             <div class="testimonials-grid">
-                <!-- Lia -->
                 <div class="testimonial-card fade-up">
                     <div class="testimonial-card__photos">
-                        <img src="../assets/images/cookies/testimonial-lia.jpg" alt="Lia" loading="lazy">
-                        <img src="../assets/images/cookies/testimonial-lia-result.jpg" alt="Lia's cookies" loading="lazy">
+                        <img src="../assets/images/cookies/testimonial-lia.jpg" alt="Lia — cookie recipe review" loading="lazy">
+                        <img src="../assets/images/cookies/testimonial-lia-result.jpg" alt="Lia's baked cookies" loading="lazy">
                     </div>
                     <div class="testimonial-card__body">
-                        <p class="testimonial-card__stars">★★★★★</p>
+                        <div class="testimonial-card__stars">★★★★★</div>
                         <h4 class="testimonial-card__name">Lia</h4>
                     </div>
                 </div>
-                <!-- Christian -->
                 <div class="testimonial-card fade-up fade-up--delay-1">
                     <div class="testimonial-card__photos">
-                        <img src="../assets/images/cookies/testimonial-christian.jpg" alt="Christian" loading="lazy">
-                        <img src="../assets/images/cookies/testimonial-christian-result.jpg" alt="Christian's cookies" loading="lazy">
+                        <img src="../assets/images/cookies/testimonial-christian.jpg" alt="Christian — cookie recipe review" loading="lazy">
+                        <img src="../assets/images/cookies/testimonial-christian-result.jpg" alt="Christian's baked cookies" loading="lazy">
                     </div>
                     <div class="testimonial-card__body">
-                        <p class="testimonial-card__stars">★★★★★</p>
+                        <div class="testimonial-card__stars">★★★★★</div>
                         <h4 class="testimonial-card__name">Christian</h4>
                     </div>
                 </div>
-                <!-- Melina -->
                 <div class="testimonial-card fade-up fade-up--delay-2">
                     <div class="testimonial-card__photos">
-                        <img src="../assets/images/cookies/testimonial-melina.jpg" alt="Melina" loading="lazy">
-                        <img src="../assets/images/cookies/cookies-feedback.jpg" alt="Melina's cookies" loading="lazy">
+                        <img src="../assets/images/cookies/testimonial-melina.jpg" alt="Melina — cookie recipe review" loading="lazy">
+                        <img src="../assets/images/cookies/cookies-feedback.jpg" alt="Melina's baked cookies" loading="lazy">
                     </div>
                     <div class="testimonial-card__body">
-                        <p class="testimonial-card__stars">★★★★★</p>
+                        <div class="testimonial-card__stars">★★★★★</div>
                         <h4 class="testimonial-card__name">Melina</h4>
                     </div>
                 </div>
@@ -388,30 +377,29 @@
         </div>
     </section>
 
-    <!-- Pricing -->
-    <section class="section pricing" style="background:var(--warm-brown);">
+    <!-- PRICING -->
+    <section class="section pricing--dark" style="padding:80px 0;">
         <div class="container">
             <div class="price-card fade-up" style="background:rgba(255,255,255,0.06); border:1px solid rgba(200,149,108,0.3);">
-                <p class="price-card__label">I'm Ready for Perfect Cookies</p>
-                <h3 class="price-card__title" style="color:var(--gold-light);">The Art of Cookies</h3>
-                <p class="price-card__subtitle" style="color:rgba(232,201,160,0.7);">1 base recipe · 8 variations · the science of baking</p>
+                <p class="price-card__label">Complete bakery-style cookie guide</p>
+                <h2 class="price-card__title" style="color:var(--gold-light);">The Art of Cookies</h2>
+                <p class="price-card__subtitle" style="color:rgba(232,201,160,0.7);">1 base recipe · 8 variations · the full science of baking</p>
                 <div class="price-card__amount" style="color:var(--gold-light);"><span>$</span>12</div>
-                <a href="https://pay.hotmart.com/W98054458O?off=bhghmq1p&hotfeature=51" class="btn btn--gold price-card__cta" target="_blank" rel="noopener">Start Baking Cookies!</a>
-                <p class="price-card__secure" style="color:rgba(232,201,160,0.6);">100% secure payment with instant approval</p>
+                <a href="https://pay.hotmart.com/W98054458O?off=bhghmq1p&hotfeature=51" class="btn btn--gold price-card__cta" target="_blank" rel="noopener">Get Instant Access — $12</a>
+                <p class="price-card__secure" style="color:rgba(232,201,160,0.6);">Immediate access after purchase · 100% secure payment</p>
                 <div class="price-card__guarantee" style="border-color:rgba(200,149,108,0.2); color:rgba(232,201,160,0.7);">
                     <strong style="color:var(--gold-light);">7-Day Money-Back Guarantee</strong>
-                    Your money back, no questions asked within 7 days of your purchase.
+                    Not happy with the results? Get a full refund within 7 days — no questions asked.
                 </div>
             </div>
-
             <div class="trust-badges fade-up fade-up--delay-1">
                 <div class="trust-badge">
                     <div class="trust-badge__icon" style="background:rgba(255,255,255,0.08);">🛡️</div>
                     <p class="trust-badge__text" style="color:var(--gold-light);">7-Day Guarantee</p>
                 </div>
                 <div class="trust-badge">
-                    <div class="trust-badge__icon" style="background:rgba(255,255,255,0.08);">🔒</div>
-                    <p class="trust-badge__text" style="color:var(--gold-light);">100% Secure Payment</p>
+                    <div class="trust-badge__icon" style="background:rgba(255,255,255,0.08);">📥</div>
+                    <p class="trust-badge__text" style="color:var(--gold-light);">Instant Download</p>
                 </div>
                 <div class="trust-badge">
                     <div class="trust-badge__icon" style="background:rgba(255,255,255,0.08);">📱</div>
@@ -424,82 +412,54 @@
     <!-- FAQ -->
     <section class="section faq">
         <div class="container">
-            <h2 class="faq__title fade-up">Frequently Asked Questions</h2>
+            <p class="about__label fade-up" style="text-align:center;">Got questions?</p>
+            <h2 class="faq__title fade-up fade-up--delay-1">Cookie Recipe eBook — Your Questions Answered</h2>
             <ul class="faq__list">
                 <li class="faq__item fade-up">
-                    <div class="faq__question">
-                        Who is this product designed for?
-                        <span class="faq__icon">+</span>
-                    </div>
-                    <div class="faq__answer">
-                        <p>For everyone, really. It's the kind of recipe that belongs in every baker's collection. The instructions are simple to follow, so even beginners won't have any trouble. At the same time, advanced bakers and professionals will appreciate and enjoy this recipe, as it's a timeless classic.</p>
-                    </div>
+                    <div class="faq__question">Is this cookie guide suitable for complete beginners?<span class="faq__icon">+</span></div>
+                    <div class="faq__answer"><p>Yes, completely. The guide is designed for all levels. Every technique is explained step by step with photos, and the science section is written in plain language so anyone can follow along and get great results from the very first bake.</p></div>
                 </li>
                 <li class="faq__item fade-up fade-up--delay-1">
-                    <div class="faq__question">
-                        How does the Guarantee Period work?
-                        <span class="faq__icon">+</span>
-                    </div>
-                    <div class="faq__answer">
-                        <p>The Guarantee Period is the period of time you have to request a full refund of the amount you paid for your purchase if the product is not satisfactory to you. Simply contact us within 7 days and you'll receive a full refund, no questions asked.</p>
-                    </div>
+                    <div class="faq__question">What are the 8 cookie variations included?<span class="faq__icon">+</span></div>
+                    <div class="faq__answer"><p>The 8 variations are built on the same base recipe, each introducing a different flavor profile or technique. Once you master the base, the variations are easy to follow and give you a full repertoire of bakery-style cookies to bake and share.</p></div>
                 </li>
                 <li class="faq__item fade-up fade-up--delay-2">
-                    <div class="faq__question">
-                        How to access the product?
-                        <span class="faq__icon">+</span>
-                    </div>
-                    <div class="faq__answer">
-                        <p>You'll receive your access information by email. The content can be viewed or downloaded on your desktop, smartphone, tablet, or other digital device. You can also access the product from Hotmart by going to My Account → My Purchases.</p>
-                    </div>
+                    <div class="faq__question">Is this guide useful for selling cookies as a business?<span class="faq__icon">+</span></div>
+                    <div class="faq__answer"><p>Absolutely. This is the exact recipe I use professionally. I first discovered these cookies working in a 5-star hotel, and I've sold them to clients ever since — many of whom say they're the best cookies they've ever tasted. The guide gives you everything you need for a professional result.</p></div>
                 </li>
                 <li class="faq__item fade-up fade-up--delay-3">
-                    <div class="faq__question">
-                        Is this eBook suitable for selling cookies as a business?
-                        <span class="faq__icon">+</span>
-                    </div>
-                    <div class="faq__answer">
-                        <p>Yes, definitely! I first tried these cookies when I was working in a chic five-star hotel in the South of France, where they served crunchy mini cookies alongside coffee. I've transformed this recipe into classic bakery-style cookies, which I regularly sell to clients, many of whom say they are the best cookies they've ever had.</p>
-                    </div>
+                    <div class="faq__question">How do I access the cookie eBook after purchase?<span class="faq__icon">+</span></div>
+                    <div class="faq__answer"><p>Immediately after purchase via Hotmart, you'll receive an email with your download link. The guide is a PDF you can save and use on any device — computer, phone, or tablet.</p></div>
                 </li>
                 <li class="faq__item fade-up">
-                    <div class="faq__question">
-                        What if I have questions after purchasing?
-                        <span class="faq__icon">+</span>
-                    </div>
-                    <div class="faq__answer">
-                        <p>If you have any questions after purchasing, feel free to send me an email or contact me directly on Instagram. I'm happy to help with anything you need!</p>
-                    </div>
+                    <div class="faq__question">What if I have questions after purchasing?<span class="faq__icon">+</span></div>
+                    <div class="faq__answer"><p>I'm here to help! Reach out by email or find me on Instagram. I personally answer questions and love hearing about your baking results.</p></div>
                 </li>
             </ul>
         </div>
     </section>
 
-    <!-- Final CTA -->
+    <!-- FINAL CTA -->
     <section style="background:var(--cream); padding:60px 20px; text-align:center;">
         <div class="container fade-up">
-            <h2 style="margin-bottom:24px;">Ready for Perfect Cookies?</h2>
-            <a href="https://pay.hotmart.com/W98054458O?off=bhghmq1p&hotfeature=51" class="btn btn--primary" target="_blank" rel="noopener">I'm Ready — Get the eBook</a>
+            <h2 style="margin-bottom:12px;">Your Perfect Cookie Recipe Is Waiting</h2>
+            <p style="color:var(--text-light); margin-bottom:28px;">Join hundreds of home bakers who finally got it right.</p>
+            <a href="https://pay.hotmart.com/W98054458O?off=bhghmq1p&hotfeature=51" class="btn btn--primary" target="_blank" rel="noopener">Get The Art of Cookies — $12</a>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <p class="footer__text">© 2025 Atelier Katja. All rights reserved.</p>
     </footer>
 
     <script>
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('visible');
-            });
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
         }, { threshold: 0.1 });
-
         document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-
-        document.querySelectorAll('.faq__question').forEach(question => {
-            question.addEventListener('click', () => {
-                const item = question.parentElement;
+        document.querySelectorAll('.faq__question').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
                 const isOpen = item.classList.contains('open');
                 document.querySelectorAll('.faq__item.open').forEach(i => i.classList.remove('open'));
                 if (!isOpen) item.classList.add('open');
