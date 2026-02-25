@@ -107,7 +107,7 @@
                     <div class="divider__dot"></div>
                     <div class="divider__line"></div>
                 </div>
-                <a href="https://pay.hotmart.com/H96957151F?off=vf1qtg4h&hotfeature=51" class="btn btn--gold fade-up fade-up--delay-3" target="_blank" rel="noopener">Get the Recipe Guide — $12</a>
+                <a href="https://pay.hotmart.com/H96957151F?checkoutMode=2&off=vf1qtg4h&hotfeature=51" class="btn btn--gold fade-up fade-up--delay-3 hotmart-fb hotmart__button-checkout" onclick="return false;" target="_blank" rel="noopener">Get the Recipe Guide — $12</a>
             </div>
             <img src="../assets/images/marble-cake/hero-ebook.jpg" alt="Moist marble cake recipe ebook with Rocher glaze" class="product-hero__image fade-up fade-up--delay-2">
         </div>
@@ -175,7 +175,7 @@
                 </div>
             </div>
             <div style="text-align:center;" class="fade-up">
-                <a href="https://pay.hotmart.com/H96957151F?off=vf1qtg4h&hotfeature=51" class="btn btn--primary" target="_blank" rel="noopener">Get Instant Access — $12</a>
+                <a href="https://pay.hotmart.com/H96957151F?checkoutMode=2&off=vf1qtg4h&hotfeature=51" class="btn btn--primary hotmart-fb hotmart__button-checkout" onclick="return false;" target="_blank" rel="noopener">Get Instant Access — $12</a>
             </div>
         </div>
     </section>
@@ -184,7 +184,7 @@
     <section class="cta-banner fade-up">
         <h2>Ready to Bake a Marble Cake Worth Remembering?</h2>
         <p>Instant PDF download · Soaking syrup + Rocher glaze included · 7-day guarantee</p>
-        <a href="https://pay.hotmart.com/H96957151F?off=vf1qtg4h&hotfeature=51" class="btn btn--white" target="_blank" rel="noopener">Get My Marble Cake Guide — $12</a>
+        <a href="https://pay.hotmart.com/H96957151F?checkoutMode=2&off=vf1qtg4h&hotfeature=51" class="btn btn--white hotmart-fb hotmart__button-checkout" onclick="return false;" target="_blank" rel="noopener">Get My Marble Cake Guide — $12</a>
     </section>
 
     <!-- ABOUT ME -->
@@ -215,7 +215,7 @@
                 <h2 class="price-card__title" style="color:var(--gold-light);">The Art of Marble Cake</h2>
                 <p class="price-card__subtitle" style="color:rgba(232,201,160,0.7);">Recipe · Soaking syrup · Rocher glaze · Expert tips</p>
                 <div class="price-card__amount" style="color:var(--gold-light);"><span>$</span>12</div>
-                <a href="https://pay.hotmart.com/H96957151F?off=vf1qtg4h&hotfeature=51" class="btn btn--gold price-card__cta" target="_blank" rel="noopener">Get Instant Access — $12</a>
+                <a href="https://pay.hotmart.com/H96957151F?checkoutMode=2&off=vf1qtg4h&hotfeature=51" class="btn btn--gold price-card__cta hotmart-fb hotmart__button-checkout" onclick="return false;" target="_blank" rel="noopener">Get Instant Access — $12</a>
                 <p class="price-card__secure" style="color:rgba(232,201,160,0.6);">Immediate access after purchase · 100% secure payment</p>
                 <div class="price-card__guarantee" style="border-color:rgba(200,149,108,0.2); color:rgba(232,201,160,0.7);">
                     <strong style="color:var(--gold-light);">7-Day Money-Back Guarantee</strong>
@@ -274,7 +274,7 @@
         <div class="container fade-up">
             <h2 style="margin-bottom:12px;">Bake the Marble Cake Everyone Will Talk About</h2>
             <p style="color:var(--text-light); margin-bottom:28px;">Instant access · Soaking syrup · Rocher glaze · 7-day guarantee.</p>
-            <a href="https://pay.hotmart.com/H96957151F?off=vf1qtg4h&hotfeature=51" class="btn btn--primary" target="_blank" rel="noopener">Get My Marble Cake eBook — $12</a>
+            <a href="https://pay.hotmart.com/H96957151F?checkoutMode=2&off=vf1qtg4h&hotfeature=51" class="btn btn--primary hotmart-fb hotmart__button-checkout" onclick="return false;" target="_blank" rel="noopener">Get My Marble Cake eBook — $12</a>
         </div>
     </section>
 
@@ -311,6 +311,20 @@
                 if (!isOpen) item.classList.add('open');
             });
         });
+    </script>
+
+    <!-- Hotmart checkout widget -->
+    <script type="text/javascript">
+        function importHotmart(){
+            var s = document.createElement('script');
+            s.src = 'https://static.hotmart.com/checkout/widget.min.js';
+            document.head.appendChild(s);
+            var l = document.createElement('link');
+            l.rel = 'stylesheet'; l.type = 'text/css';
+            l.href = 'https://static.hotmart.com/css/hotmart-fb.min.css';
+            document.head.appendChild(l);
+        }
+        importHotmart();
     </script>
 </body>
 </html>
