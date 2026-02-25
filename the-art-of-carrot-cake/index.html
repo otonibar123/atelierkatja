@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Carrot Cake — Atelier Katja</title>
+    <meta name="description" content="Discover the step-by-step method to create an irresistibly moist carrot cake with creamy frosting and decorations that will impress everyone. Only $12.">
+    <meta property="og:title" content="The Art of Carrot Cake — Atelier Katja">
+    <meta property="og:description" content="The step-by-step method to create an irresistibly moist carrot cake.">
+    <meta property="og:image" content="../assets/images/carrot-cake/hero-carrot.jpg">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        /* ---- Hero grid layout ---- */
+        .hero {
+            background: var(--cream);
+            padding: 80px 20px 60px;
+        }
+
+        .hero__inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero__content {}
+
+        .hero__eyebrow {
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 16px;
+        }
+
+        .hero__title {
+            margin-bottom: 16px;
+        }
+
+        .hero__subtitle {
+            font-size: 1.05rem;
+            color: var(--text-light);
+            margin-bottom: 32px;
+            line-height: 1.75;
+        }
+
+        .hero__image {
+            border-radius: 12px;
+            box-shadow: var(--shadow-card);
+            width: 100%;
+            object-fit: cover;
+            max-height: 480px;
+        }
+
+        /* Problem section */
+        .problem {
+            background: var(--warm-brown);
+            color: var(--gold-light);
+            text-align: center;
+        }
+
+        .problem h2 {
+            color: var(--gold-light);
+            margin-bottom: 12px;
+        }
+
+        .problem__intro {
+            color: rgba(232, 201, 160, 0.8);
+            max-width: 560px;
+            margin: 0 auto 48px;
+            font-size: 1.02rem;
+        }
+
+        .problem-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .problem-card {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(200, 149, 108, 0.25);
+            border-radius: 16px;
+            padding: 32px 24px;
+        }
+
+        .problem-card__icon {
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+
+        .problem-card__title {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--gold-light);
+            margin-bottom: 10px;
+        }
+
+        .problem-card__text {
+            font-size: 0.9rem;
+            color: rgba(232, 201, 160, 0.7);
+            line-height: 1.65;
+        }
+
+        /* Solution section */
+        .solution {
+            background: var(--white);
+        }
+
+        .solution__inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .solution__image {
+            border-radius: 12px;
+            box-shadow: var(--shadow-card);
+            width: 100%;
+            object-fit: cover;
+            max-height: 400px;
+        }
+
+        .solution__list {
+            list-style: none;
+            margin-top: 24px;
+        }
+
+        .solution__list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-light);
+        }
+
+        .solution__list li:last-child { border-bottom: none; }
+
+        .solution__check {
+            color: var(--gold);
+            font-size: 1.1rem;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        /* What's inside */
+        .inside {
+            background: var(--cream);
+        }
+
+        .inside__title {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .inside-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .inside-item {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 28px 24px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .inside-item__number {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--gold-light);
+            font-weight: 700;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        .inside-item__title {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            color: var(--warm-brown);
+            margin-bottom: 6px;
+        }
+
+        .inside-item__text {
+            font-size: 0.88rem;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Imagine section */
+        .imagine {
+            background: var(--white);
+            text-align: center;
+        }
+
+        .imagine__list {
+            list-style: none;
+            max-width: 540px;
+            margin: 32px auto 40px;
+            text-align: left;
+        }
+
+        .imagine__list li {
+            display: flex;
+            gap: 12px;
+            padding: 10px 0;
+            color: var(--text-light);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .imagine__list li:last-child { border-bottom: none; }
+
+        /* Testimonials */
+        .testimonials {
+            background: var(--cream);
+        }
+
+        .testimonials__title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .testimonial-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-card__text {
+            font-style: italic;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .testimonial-card__stars {
+            color: var(--gold);
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 700px) {
+            .hero__inner,
+            .solution__inner,
+            .problem-cards,
+            .inside-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero__image, .solution__image {
+                max-height: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Topbar -->
+    <header class="topbar">
+        <span class="topbar__brand">Atelier Katja</span>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero__inner">
+            <div class="hero__content">
+                <p class="hero__eyebrow fade-up">eBook · Baking</p>
+                <h1 class="hero__title fade-up fade-up--delay-1">The Art of Carrot Cake</h1>
+                <p class="hero__subtitle fade-up fade-up--delay-2">
+                    Discover the step-by-step method to create an irresistibly moist carrot cake
+                    with creamy frosting and decorations that will impress everyone you know.
+                </p>
+                <div class="divider fade-up fade-up--delay-2" style="margin-left:0;margin-right:auto;">
+                    <div class="divider__line"></div>
+                    <div class="divider__dot"></div>
+                    <div class="divider__line"></div>
+                </div>
+                <a href="https://pay.hotmart.com/A99233381H?off=s9n6ppy5&hotfeature=51" class="btn btn--primary fade-up fade-up--delay-3" target="_blank" rel="noopener">Get my guide — $12</a>
+            </div>
+            <img src="../assets/images/carrot-cake/hero-carrot.jpg" alt="The Art of Carrot Cake" class="hero__image fade-up fade-up--delay-2">
+        </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="section problem">
+        <div class="container--wide">
+            <p class="about__label fade-up" style="text-align:center;">Discover the secrets of the perfect carrot cake</p>
+            <h2 class="fade-up fade-up--delay-1">Why It Never Turns Out Right?</h2>
+            <p class="problem__intro fade-up fade-up--delay-2">
+                Carrot cake may seem simple, but getting it just right is an ART. The texture should be moist, the spices warm,
+                topped with a smooth frosting — and yet, so many things can go wrong:
+            </p>
+            <div class="problem-cards">
+                <div class="problem-card fade-up">
+                    <div class="problem-card__icon">😞</div>
+                    <h4 class="problem-card__title">Dry & Crumbly Texture</h4>
+                    <p class="problem-card__text">Disappointing from the very first bite — nothing kills the mood like a dry cake.</p>
+                </div>
+                <div class="problem-card fade-up fade-up--delay-1">
+                    <div class="problem-card__icon">🍰</div>
+                    <h4 class="problem-card__title">Frosting Too Heavy</h4>
+                    <p class="problem-card__text">Loaded with too much butter, it overwhelms the delicate flavors of the cake.</p>
+                </div>
+                <div class="problem-card fade-up fade-up--delay-2">
+                    <div class="problem-card__icon">😤</div>
+                    <h4 class="problem-card__title">Decorations That Frustrate</h4>
+                    <p class="problem-card__text">Look easy on paper but end up time-consuming and stressful to execute.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution -->
+    <section class="section solution">
+        <div class="container">
+            <div class="solution__inner fade-up">
+                <img src="../assets/images/carrot-cake/carrot-cake-detail.jpg" alt="Perfect carrot cake detail" class="solution__image">
+                <div>
+                    <p class="about__label">The solution you've been waiting for</p>
+                    <h2>The Formula That Never Fails</h2>
+                    <ul class="solution__list">
+                        <li><span class="solution__check">✓</span> Moist and flavorful, every time</li>
+                        <li><span class="solution__check">✓</span> Frosting that's light, balanced, and not too sweet</li>
+                        <li><span class="solution__check">✓</span> Decorations that impress without stress</li>
+                    </ul>
+                    <br>
+                    <p class="about__text">
+                        Each step is explained with precision, each technique justified, so you understand not just the "how" but also the <em>why</em> behind every action.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Inside -->
+    <section class="section inside">
+        <div class="container--wide">
+            <div class="inside__title fade-up">
+                <p class="about__label">What you'll discover</p>
+                <h2>What's Inside This Guide</h2>
+            </div>
+            <div class="inside-grid">
+                <div class="inside-item fade-up">
+                    <span class="inside-item__number">1</span>
+                    <div>
+                        <h4 class="inside-item__title">THE Carrot Cake Recipe</h4>
+                        <p class="inside-item__text">The perfected recipe with all the details for a perfect result every time.</p>
+                    </div>
+                </div>
+                <div class="inside-item fade-up fade-up--delay-1">
+                    <span class="inside-item__number">2</span>
+                    <div>
+                        <h4 class="inside-item__title">Step-by-Step Photo Guide</h4>
+                        <p class="inside-item__text">Detailed images to guide you through each step of the preparation.</p>
+                    </div>
+                </div>
+                <div class="inside-item fade-up fade-up--delay-2">
+                    <span class="inside-item__number">3</span>
+                    <div>
+                        <h4 class="inside-item__title">Behind the Baking Process</h4>
+                        <p class="inside-item__text">From mixing to baking — understand each step and why it matters.</p>
+                    </div>
+                </div>
+                <div class="inside-item fade-up fade-up--delay-3">
+                    <span class="inside-item__number">4</span>
+                    <div>
+                        <h4 class="inside-item__title">Cream Cheese Frosting</h4>
+                        <p class="inside-item__text">A detailed recipe with step-by-step explanations and a photo guide.</p>
+                    </div>
+                </div>
+                <div class="inside-item fade-up">
+                    <span class="inside-item__number">5</span>
+                    <div>
+                        <h4 class="inside-item__title">Marzipan Decoration</h4>
+                        <p class="inside-item__text">Easily craft adorable marzipan carrots with step-by-step photo guidance.</p>
+                    </div>
+                </div>
+                <div class="inside-item fade-up fade-up--delay-1">
+                    <span class="inside-item__number">6</span>
+                    <div>
+                        <h4 class="inside-item__title">Storage Tips</h4>
+                        <p class="inside-item__text">How to store and freeze your carrot cake to keep it fresh and delicious.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="section about">
+        <div class="container">
+            <div class="about__inner fade-up">
+                <img src="../assets/images/carrot-cake/katja-carrot.jpg" alt="Katja Althoff — Pastry Chef" class="about__photo">
+                <div>
+                    <p class="about__label">A little about me</p>
+                    <h2 class="about__name">Katja Althoff</h2>
+                    <p class="about__text">
+                        Hi, I'm Katja — a pastry chef from Vienna, now living in the South of France, where I turned my passion for baking into a profession.
+                        After years of training with top chefs, earning my diploma, and working in professional kitchens, I launched my own business.
+                    </p>
+                    <br>
+                    <p class="about__text">
+                        What I love most is turning simple cakes into pure perfection and diving deep into the "why" and "how" of the baking process.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+        <div class="container--wide">
+            <h2 class="testimonials__title fade-up">What Our Readers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-up">
+                    <img src="../assets/images/carrot-cake/testimonial-1.png" alt="Reader testimonial">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__text">
+                        "This carrot cake is better than anything I've had at Starbucks — hands down the best I've ever tasted.
+                        Moist, perfectly spiced, and that frosting? Perfection!"
+                    </p>
+                </div>
+                <div class="testimonial-card fade-up fade-up--delay-1">
+                    <img src="../assets/images/carrot-cake/testimonial-2.png" alt="Reader testimonial">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__text">
+                        "Finally a carrot cake that tastes exactly how you've always imagined! The explanations are clear and the photos
+                        really helped me at each step. My friends can't believe the result!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section pricing">
+        <div class="container">
+            <div class="price-card fade-up">
+                <p class="price-card__label">Get my complete guide now</p>
+                <h3 class="price-card__title">The Art of Perfect Carrot Cake</h3>
+                <p class="price-card__subtitle">Complete guide with step-by-step photos</p>
+                <div class="price-card__amount"><span>$</span>12</div>
+                <a href="https://pay.hotmart.com/A99233381H?off=s9n6ppy5&hotfeature=51" class="btn btn--primary price-card__cta" target="_blank" rel="noopener">Get my complete guide</a>
+                <p class="price-card__secure">Immediate access after purchase · 100% secure payment</p>
+                <div class="price-card__guarantee">
+                    <strong>15-Day Satisfaction Guarantee</strong>
+                    If you're not completely satisfied with the results obtained by following this guide,
+                    we'll refund you in full within 15 days of your purchase. No questions, no conditions.
+                </div>
+            </div>
+
+            <div class="trust-badges fade-up fade-up--delay-1">
+                <div class="trust-badge">
+                    <div class="trust-badge__icon">🛡️</div>
+                    <p class="trust-badge__text">15-Day Guarantee</p>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge__icon">🔒</div>
+                    <p class="trust-badge__text">100% Secure Payment</p>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge__icon">📱</div>
+                    <p class="trust-badge__text">Any Device</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq">
+        <div class="container">
+            <h2 class="faq__title fade-up">Frequently Asked Questions</h2>
+            <ul class="faq__list">
+                <li class="faq__item fade-up">
+                    <div class="faq__question">
+                        Is this guide suitable for baking beginners?
+                        <span class="faq__icon">+</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Absolutely! This guide has been designed to be accessible to all levels, from complete beginners to experienced bakers. Each step is explained in detail with photos, and the techniques are presented in a way that's easy to understand and reproduce.</p>
+                    </div>
+                </li>
+                <li class="faq__item fade-up fade-up--delay-1">
+                    <div class="faq__question">
+                        What equipment is needed?
+                        <span class="faq__icon">+</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p>You'll need basic equipment: an oven, an electric mixer, cake pans, and some standard kitchen utensils. Nothing extraordinary or expensive is required to succeed with this recipe.</p>
+                    </div>
+                </li>
+                <li class="faq__item fade-up fade-up--delay-2">
+                    <div class="faq__question">
+                        How will I receive my eBook after purchase?
+                        <span class="faq__icon">+</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Immediately after your purchase via Hotmart, you'll receive an email containing a download link to access your eBook in PDF format. You can view it on any device: computer, tablet, or smartphone.</p>
+                    </div>
+                </li>
+                <li class="faq__item fade-up fade-up--delay-3">
+                    <div class="faq__question">
+                        Can I freeze the cake or make it ahead of time?
+                        <span class="faq__icon">+</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Yes! The guide includes storage and freezing tips so your carrot cake stays fresh and delicious, whether you're baking ahead for a party or saving leftovers for later.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer__text">© 2025 The Art of Carrot Cake — Atelier Katja. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        document.querySelectorAll('.faq__question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq__item.open').forEach(i => i.classList.remove('open'));
+                if (!isOpen) item.classList.add('open');
+            });
+        });
+    </script>
+</body>
+</html>
