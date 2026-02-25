@@ -609,6 +609,24 @@ p {
 .topbar__nav:hover { color: var(--warm-brown); }
 .topbar { position: relative; }
 
+/* --- Language switcher --- */
+.topbar__lang {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--warm-brown);
+    text-decoration: none;
+    padding: 4px 12px;
+    border: 1px solid var(--gold);
+    border-radius: 20px;
+    transition: background var(--transition), color var(--transition);
+}
+.topbar__lang:hover { background: var(--gold); color: var(--white); }
+
 /* --- CTA Banner (shared) --- */
 .cta-banner {
     background: var(--gold);
