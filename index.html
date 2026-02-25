@@ -688,11 +688,13 @@
         }, { threshold: 0.1 });
         document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-        // Partnership form — opens email client with fields pre-filled
+        // Partnership form — sends directly via Cloudflare Function + Resend
         const collabForm = document.getElementById('collab-form');
         if (collabForm) {
-            collabForm.addEventListener('submit', function(e) {
+            collabForm.addEventListener('submit', async function(e) {
                 e.preventDefault();
+                const btn = this.querySelector('[type="submit"]');
+
                 const name    = document.getElementById('cf-name').value.trim();
                 const email   = document.getElementById('cf-email').value.trim();
                 const brand   = document.getElementById('cf-brand').value.trim();
@@ -701,21 +703,29 @@
 
                 if (!name || !email || !type || !message) return;
 
-                const subject = 'Partnership Inquiry — ' + (brand || name);
-                const body =
-                    'Name: ' + name + '\n' +
-                    'Email: ' + email + '\n' +
-                    (brand ? 'Brand: ' + brand + '\n' : '') +
-                    'Type: ' + type + '\n\n' +
-                    message;
+                btn.textContent = 'Sending…';
+                btn.disabled = true;
 
-                window.location.href =
-                    'mailto:contact@atelierkatja.com' +
-                    '?subject=' + encodeURIComponent(subject) +
-                    '&body='    + encodeURIComponent(body);
+                try {
+                    const res = await fetch('/api/contact', {
+                        method:  'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body:    JSON.stringify({ name, email, brand, type, message }),
+                    });
 
-                collabForm.style.display = 'none';
-                document.getElementById('collab-success').style.display = 'block';
+                    if (res.ok) {
+                        collabForm.style.display = 'none';
+                        document.getElementById('collab-success').style.display = 'block';
+                    } else {
+                        btn.textContent = 'Send my message →';
+                        btn.disabled = false;
+                        alert('Something went wrong, please try again.');
+                    }
+                } catch {
+                    btn.textContent = 'Send my message →';
+                    btn.disabled = false;
+                    alert('Something went wrong, please try again.');
+                }
             });
         }
     </script>
