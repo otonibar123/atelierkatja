@@ -479,9 +479,20 @@
             var l = document.createElement('link');
             l.rel = 'stylesheet'; l.type = 'text/css';
             l.href = 'https://static.hotmart.com/css/hotmart-fb.min.css';
+            l.onload = function() {
+                var o = document.createElement('style');
+                o.textContent =
+                    '.btn.hotmart-fb{border-radius:60px!important;font-family:"DM Sans",system-ui,sans-serif!important;font-size:.95rem!important;font-weight:600!important;text-transform:uppercase!important;letter-spacing:.05em!important;padding:16px 40px!important;border:none!important;width:auto!important;height:auto!important;background-image:none!important;box-shadow:none!important;display:inline-block!important;}' +
+                    '.btn--gold.hotmart-fb{background:#C8956C!important;color:#fff!important;}' +
+                    '.btn--primary.hotmart-fb{background:#3E2723!important;color:#E8C9A0!important;}' +
+                    '.btn--white.hotmart-fb{background:#fff!important;color:#3E2723!important;}' +
+                    '.price-card__cta.hotmart-fb{background:#C8956C!important;color:#fff!important;}';
+                document.head.appendChild(o);
+            };
             document.head.appendChild(l);
         }
         importHotmart();
     </script>
+
 </body>
 </html>
