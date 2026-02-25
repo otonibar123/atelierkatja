@@ -183,6 +183,26 @@ p {
     left: 140%;
 }
 
+/* Override Hotmart widget button styles */
+.btn.hotmart-fb {
+    background-image: none !important;
+    width: auto !important;
+    height: auto !important;
+    border-radius: var(--radius-btn) !important;
+    padding: 16px 40px !important;
+    font-family: var(--font-body) !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    display: inline-block !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.btn--gold.hotmart-fb    { background-color: var(--gold) !important;       color: var(--white) !important; }
+.btn--primary.hotmart-fb { background-color: var(--warm-brown) !important; color: var(--gold-light) !important; }
+.btn--white.hotmart-fb   { background-color: var(--white) !important;      color: var(--warm-brown) !important; }
+
 /* ============================================
    Divider
    ============================================ */
