@@ -1,25 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <!-- English pages -->
     <url>
         <loc>https://atelierkatja.com/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://atelierkatja.com/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://atelierkatja.com/fr/"/>
         <lastmod>2026-02-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://atelierkatja.com/the-art-of-marble-cake/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://atelierkatja.com/the-art-of-marble-cake/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://atelierkatja.com/fr/gateau-marbre/"/>
         <lastmod>2026-02-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://atelierkatja.com/the-art-of-carrot-cake/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://atelierkatja.com/the-art-of-carrot-cake/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://atelierkatja.com/fr/carrot-cake/"/>
         <lastmod>2026-02-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://atelierkatja.com/the-art-of-cookies/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://atelierkatja.com/the-art-of-cookies/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://atelierkatja.com/fr/cookies/"/>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <!-- French pages -->
+    <url>
+        <loc>https://atelierkatja.com/fr/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://atelierkatja.com/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://atelierkatja.com/fr/"/>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://atelierkatja.com/fr/gateau-marbre/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://atelierkatja.com/the-art-of-marble-cake/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://atelierkatja.com/fr/gateau-marbre/"/>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://atelierkatja.com/fr/carrot-cake/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://atelierkatja.com/the-art-of-carrot-cake/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://atelierkatja.com/fr/carrot-cake/"/>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://atelierkatja.com/fr/cookies/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://atelierkatja.com/the-art-of-cookies/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://atelierkatja.com/fr/cookies/"/>
         <lastmod>2026-02-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
