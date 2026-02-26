@@ -2,7 +2,8 @@
    ATELIER KATJA — Design System
    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap');
+/* Google Fonts loaded via <link> in each HTML <head> for better performance.
+   Do NOT re-add @import here — it is render-blocking. */
 
 /* ============================================
    CSS Variables
@@ -12,6 +13,7 @@
     --warm-brown: #3E2723;
     --chocolate: #5D4037;
     --gold: #C8956C;
+    --gold-text: #946539;          /* WCAG AA on cream/white (~4.7:1) */
     --gold-light: #E8C9A0;
     --text: #2C1810;
     --text-light: #6D4C41;
@@ -260,7 +262,7 @@ p {
     font-weight: 600;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--gold-text);
     margin-bottom: 8px;
 }
 
@@ -328,7 +330,7 @@ p {
     font-size: 0.75rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--gold-text);
     font-weight: 600;
     margin-bottom: 8px;
 }
@@ -588,7 +590,7 @@ p {
     font-weight: 600;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--gold-text);
     margin-bottom: 8px;
 }
 
@@ -624,6 +626,41 @@ p {
     .product-hero__inner { grid-template-columns: 1fr; gap: 32px; }
     .product-hero__image { max-height: 260px; }
     .topbar__nav { display: none; }
+}
+
+/* ============================================
+   Product Card Micro-interactions
+   ============================================ */
+.product-card {
+    transition: transform 0.35s cubic-bezier(.4,0,.2,1), box-shadow 0.35s cubic-bezier(.4,0,.2,1);
+}
+.product-card:hover {
+    transform: translateY(-6px) scale(1.015);
+    box-shadow: 0 20px 52px rgba(62,39,35,0.18);
+}
+.product-card:hover .product-card__image {
+    filter: brightness(1.04);
+    transition: filter 0.35s ease;
+}
+
+/* ============================================
+   Form Inline Error
+   ============================================ */
+.form-error {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    background: rgba(180,60,50,0.12);
+    border: 1px solid rgba(180,60,50,0.35);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-top: 12px;
+    font-size: 0.88rem;
+    color: #d45a50;
+    line-height: 1.5;
+}
+.form-error.form-error--visible {
+    display: flex;
 }
 
 /* ============================================

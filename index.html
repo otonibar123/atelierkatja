@@ -43,6 +43,12 @@
     }
     </script>
 
+    <!-- Preconnect & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://static.hotmart.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
         /* Hero */
@@ -143,7 +149,7 @@
             font-weight: 600;
             letter-spacing: 0.2em;
             text-transform: uppercase;
-            color: var(--gold);
+            color: var(--gold-text);
             margin-bottom: 10px;
         }
         .product-card__title {
@@ -229,7 +235,7 @@
             font-weight: 600;
             letter-spacing: 0.2em;
             text-transform: uppercase;
-            color: var(--gold);
+            color: var(--gold-text);
             margin-bottom: 8px;
         }
         .about-strip__name {
@@ -470,7 +476,7 @@
     <!-- Products -->
     <section class="products" id="products">
         <div class="products__header fade-up">
-            <p style="font-size:0.78rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:10px;">Choose your recipe</p>
+            <p style="font-size:0.78rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold-text); margin-bottom:10px;">Choose your recipe</p>
             <h2>3 eBooks. 3 Iconic Recipes.</h2>
             <p>Each guide is a complete masterclass — with step-by-step photos, the science of baking, and professional techniques made accessible.</p>
         </div>
@@ -478,10 +484,10 @@
 
             <!-- Marble Cake -->
             <div class="product-card fade-up">
-                <img src="assets/images/marble-cake/hero-ebook.webp" alt="Marble cake recipe ebook" class="product-card__image" loading="lazy">
+                <img src="assets/images/marble-cake/hero-ebook.webp" alt="Marble cake recipe ebook" class="product-card__image" loading="lazy" width="1600" height="1200">
                 <div class="product-card__body">
                     <p class="product-card__tag">Marble Cake · Classic</p>
-                    <h2 class="product-card__title">The Art of Marble Cake</h2>
+                    <h3 class="product-card__title">The Art of Marble Cake</h3>
                     <p class="product-card__desc">The fluffy, moist marble cake recipe your family will ask for forever — with a rich soaking syrup and a decadent Rocher chocolate glaze.</p>
                     <ul class="product-card__highlights">
                         <li>Perfected marble cake recipe</li>
@@ -491,17 +497,17 @@
                     </ul>
                     <div class="product-card__footer">
                         <div class="product-card__price"><span>$</span>12</div>
-                        <a href="/the-art-of-marble-cake/" class="btn btn--primary product-card__cta">Discover →</a>
+                        <a href="/the-art-of-marble-cake/" class="btn btn--primary product-card__cta" aria-label="Discover The Art of Marble Cake eBook">Discover →</a>
                     </div>
                 </div>
             </div>
 
             <!-- Carrot Cake -->
             <div class="product-card fade-up fade-up--delay-1">
-                <img src="assets/images/carrot-cake/hero-carrot.webp" alt="Carrot cake recipe ebook" class="product-card__image" loading="lazy">
+                <img src="assets/images/carrot-cake/hero-carrot.webp" alt="Carrot cake recipe ebook" class="product-card__image" loading="lazy" width="1600" height="1200">
                 <div class="product-card__body">
                     <p class="product-card__tag">Carrot Cake · Step-by-Step</p>
-                    <h2 class="product-card__title">The Art of Carrot Cake</h2>
+                    <h3 class="product-card__title">The Art of Carrot Cake</h3>
                     <p class="product-card__desc">The best moist carrot cake recipe — with light cream cheese frosting and adorable marzipan carrot decorations that actually work.</p>
                     <ul class="product-card__highlights">
                         <li>Perfectly moist carrot cake</li>
@@ -511,17 +517,17 @@
                     </ul>
                     <div class="product-card__footer">
                         <div class="product-card__price"><span>$</span>12</div>
-                        <a href="/the-art-of-carrot-cake/" class="btn btn--primary product-card__cta">Discover →</a>
+                        <a href="/the-art-of-carrot-cake/" class="btn btn--primary product-card__cta" aria-label="Discover The Art of Carrot Cake eBook">Discover →</a>
                     </div>
                 </div>
             </div>
 
             <!-- Cookies -->
             <div class="product-card fade-up fade-up--delay-2">
-                <img src="assets/images/cookies/hero-cookie.webp" alt="Bakery-style cookie recipe ebook" class="product-card__image" loading="lazy" style="object-position: top;">
+                <img src="assets/images/cookies/hero-cookie.webp" alt="Bakery-style cookie recipe ebook" class="product-card__image" loading="lazy" style="object-position: top;" width="512" height="800">
                 <div class="product-card__body">
                     <p class="product-card__tag">Cookies · 8 Variations</p>
-                    <h2 class="product-card__title">The Art of Cookies</h2>
+                    <h3 class="product-card__title">The Art of Cookies</h3>
                     <p class="product-card__desc">Master the perfect bakery-style cookie at home — 1 base recipe, 8 delicious variations, and the full science of baking explained.</p>
                     <ul class="product-card__highlights">
                         <li>1 perfected base recipe</li>
@@ -531,7 +537,7 @@
                     </ul>
                     <div class="product-card__footer">
                         <div class="product-card__price"><span>$</span>12</div>
-                        <a href="/the-art-of-cookies/" class="btn btn--primary product-card__cta">Discover →</a>
+                        <a href="/the-art-of-cookies/" class="btn btn--primary product-card__cta" aria-label="Discover The Art of Cookies eBook">Discover →</a>
                     </div>
                 </div>
             </div>
@@ -542,7 +548,7 @@
     <!-- About strip -->
     <section class="about-strip">
         <div class="about-strip__inner fade-up">
-            <img src="assets/images/shared/katja-portrait.webp" alt="Katja Althoff — Professional Pastry Chef" class="about-strip__photo">
+            <img src="assets/images/shared/katja-portrait.webp" alt="Katja Althoff — Professional Pastry Chef" class="about-strip__photo" width="1200" height="1600">
             <div>
                 <p class="about-strip__label">The pastry chef behind the guides</p>
                 <h2 class="about-strip__name">Katja Althoff</h2>
@@ -623,7 +629,11 @@
                         <textarea class="form-textarea" id="cf-message" name="message" placeholder="Describe your project, timeline, and what you have in mind..." required></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn--primary form-submit">Send my message →</button>
+                    <button type="submit" class="btn btn--primary form-submit" aria-label="Send partnership inquiry">Send my message →</button>
+                    <div class="form-error" id="form-error" role="alert">
+                        <span aria-hidden="true">⚠</span>
+                        <span id="form-error-text">Something went wrong. Please try again.</span>
+                    </div>
                 </form>
 
                 <div class="collab__success" id="collab-success">
@@ -640,23 +650,23 @@
     <section class="trust-bar">
         <div class="trust-bar__items fade-up">
             <div class="trust-bar__item">
-                <span class="trust-bar__icon">📥</span>
+                <span class="trust-bar__icon" aria-hidden="true">📥</span>
                 <p class="trust-bar__text">Instant PDF Download</p>
             </div>
             <div class="trust-bar__item">
-                <span class="trust-bar__icon">📱</span>
+                <span class="trust-bar__icon" aria-hidden="true">📱</span>
                 <p class="trust-bar__text">Works on Any Device</p>
             </div>
             <div class="trust-bar__item">
-                <span class="trust-bar__icon">🔒</span>
+                <span class="trust-bar__icon" aria-hidden="true">🔒</span>
                 <p class="trust-bar__text">100% Secure Payment</p>
             </div>
             <div class="trust-bar__item">
-                <span class="trust-bar__icon">🛡️</span>
+                <span class="trust-bar__icon" aria-hidden="true">🛡️</span>
                 <p class="trust-bar__text">Up to 15-Day Guarantee</p>
             </div>
             <div class="trust-bar__item">
-                <span class="trust-bar__icon">👩‍🍳</span>
+                <span class="trust-bar__icon" aria-hidden="true">👩‍🍳</span>
                 <p class="trust-bar__text">Professional Pastry Chef</p>
             </div>
         </div>
@@ -665,16 +675,16 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer__socials">
-            <a href="https://instagram.com/atelierkatja" class="footer__social-link" target="_blank" rel="noopener" aria-label="Instagram">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            <a href="https://instagram.com/atelierkatja" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow Atelier Katja on Instagram">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                 Instagram
             </a>
-            <a href="https://tiktok.com/@atelierkatja" class="footer__social-link" target="_blank" rel="noopener" aria-label="TikTok">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
+            <a href="https://tiktok.com/@atelierkatja" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow Atelier Katja on TikTok">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
                 TikTok
             </a>
-            <a href="https://www.pinterest.com/atelierkatjaa" class="footer__social-link" target="_blank" rel="noopener" aria-label="Pinterest">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+            <a href="https://www.pinterest.com/atelierkatjaa" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow Atelier Katja on Pinterest">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
                 Pinterest
             </a>
         </div>
@@ -706,6 +716,10 @@
                 btn.textContent = 'Sending…';
                 btn.disabled = true;
 
+                const errorEl = document.getElementById('form-error');
+                const errorText = document.getElementById('form-error-text');
+                errorEl.classList.remove('form-error--visible');
+
                 try {
                     const res = await fetch('/api/contact', {
                         method:  'POST',
@@ -719,12 +733,14 @@
                     } else {
                         btn.textContent = 'Send my message →';
                         btn.disabled = false;
-                        alert('Something went wrong, please try again.');
+                        errorText.textContent = 'Something went wrong. Please try again.';
+                        errorEl.classList.add('form-error--visible');
                     }
                 } catch {
                     btn.textContent = 'Send my message →';
                     btn.disabled = false;
-                    alert('Something went wrong, please try again.');
+                    errorText.textContent = 'Network error. Please check your connection and try again.';
+                    errorEl.classList.add('form-error--visible');
                 }
             });
         }
